@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_shadow"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+
+
+
+    >
+
+    <com.android.volley.toolbox.NetworkImageView
+
+    android:id="@+id/imageView"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+
+
+        android:scaleType="fitXY" />
+
+
+    <!-- Thumbnail Image -->
+    <ImageView
+        android:id="@+id/VideoView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/imageView"
+    android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="91dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginRight="168dp"
+        android:background="@android:drawable/presence_video_online"
+        android:cropToPadding="false"
+        android:visibility="gone" />
+
+    <TextView
+    android:id="@+id/txtComplain"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/imageView"
+    android:layout_marginTop="24dp"
+    android:gravity="left"
+    android:padding="3dp"
+    android:text="Complain"
+        android:textColor="#040404"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:text="Name" />
+
+    <TextView
+
+    android:id="@+id/txtDateTime"
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/txtName"
+    android:layout_alignBottom="@+id/txtName"
+    android:layout_marginLeft="19dp"
+    android:layout_marginStart="19dp"
+    android:layout_toEndOf="@+id/txtName"
+        android:layout_toRightOf="@+id/txtName"
+        android:padding="5dp"
+        android:text="5:45"
+        android:textColor="#10bcc9"
+        android:textSize="10dip"
+        android:textStyle="bold" />
+
+
+    <!--<RelativeLayout-->
+        <!--android:background="@drawable/image_bg"-->
+        <!--android:layout_weight="3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<com.android.volley.toolbox.NetworkImageView-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--/>-->
+
+
+        <!--&lt;!&ndash; Thumbnail Image &ndash;&gt;-->
+        <!--<ImageView-->
+            <!--android:visibility="gone"-->
+            <!--android:background="@android:drawable/presence_video_online"-->
+            <!--android:id="@+id/VideoView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:weightSum="2"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:textColor="#040404"-->
+                <!--android:typeface="sans"-->
+                <!--android:textSize="15dip"-->
+                <!--android:textStyle="bold"-->
+                <!--android:id="@+id/txtComplain"-->
+                <!--android:gravity="left"-->
+                <!--android:text="Complain"-->
+                <!--android:padding="3dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:gravity="left|bottom"-->
+                <!--android:text="5:45"-->
+                <!--android:padding="5dp"-->
+                <!--android:layout_marginRight="5dip"-->
+                <!--android:textSize="10dip"-->
+                <!--android:textColor="#10bcc9"-->
+                <!--android:textStyle="bold"-->
+                <!--android:id="@+id/txtDateTime"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+
+
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+
+
+</RelativeLayout>
