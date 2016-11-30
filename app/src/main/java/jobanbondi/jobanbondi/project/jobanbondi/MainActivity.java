@@ -158,7 +158,8 @@ public class MainActivity extends AppCompatActivity {
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
 
-        startActivityForResult(Intent.createChooser(intent, "Select Picture"), GALLERY_IMAGE_REQUEST_CODE);
+//        startActivityForResult(Intent.createChooser(intent, "Select Picture"), GALLERY_IMAGE_REQUEST_CODE);
+        startActivityForResult(intent, GALLERY_IMAGE_REQUEST_CODE);
     }
 
     public void choose_video(){
@@ -166,7 +167,8 @@ public class MainActivity extends AppCompatActivity {
         intent.setType("video/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
 
-        startActivityForResult(Intent.createChooser(intent, "Select Video"), GALLERY_VIDEO_REQUEST_CODE);
+//        startActivityForResult(Intent.createChooser(intent, "Select Video"), GALLERY_VIDEO_REQUEST_CODE);
+        startActivityForResult(intent, GALLERY_VIDEO_REQUEST_CODE);
     }
 
     /**
