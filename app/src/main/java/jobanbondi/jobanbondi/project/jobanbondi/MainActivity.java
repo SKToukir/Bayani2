@@ -154,18 +154,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void choose_Image(){
-        Intent intent = new Intent();
-        intent.setType("image/*");
-        intent.setAction(Intent.ACTION_GET_CONTENT);
+
+        Intent intent = new Intent(Intent.ACTION_PICK,
+                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+
+//        Intent intent = new Intent();
+//        intent.setType("image/*");
+//        intent.setAction(Intent.ACTION_GET_CONTENT);
 
 //        startActivityForResult(Intent.createChooser(intent, "Select Picture"), GALLERY_IMAGE_REQUEST_CODE);
         startActivityForResult(intent, GALLERY_IMAGE_REQUEST_CODE);
     }
 
     public void choose_video(){
-        Intent intent = new Intent();
-        intent.setType("video/*");
-        intent.setAction(Intent.ACTION_GET_CONTENT);
+
+        Intent intent = new Intent(Intent.ACTION_PICK,
+                android.provider.MediaStore.Video.Media.EXTERNAL_CONTENT_URI);
+
+//        Intent intent = new Intent();
+//        intent.setType("video/*");
+//        intent.setAction(Intent.ACTION_GET_CONTENT);
 
 //        startActivityForResult(Intent.createChooser(intent, "Select Video"), GALLERY_VIDEO_REQUEST_CODE);
         startActivityForResult(intent, GALLERY_VIDEO_REQUEST_CODE);
